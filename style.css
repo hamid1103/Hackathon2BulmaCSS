@@ -1,0 +1,75 @@
+.slide {
+    opacity: 0;
+    position: absolute;
+    right: 10%;
+}
+
+.button:hover{
+    background-color: aliceblue;
+}
+
+#slide1 {
+    animation: showOne 8s ease-in-out infinite;
+}
+
+#slide2{
+    animation: showTwo 8s ease-in-out infinite;
+}
+
+#slide3 {
+    animation: showThree 8s ease-in-out infinite;
+}
+
+@keyframes showOne {
+    0% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 0;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes showTwo {
+    0% {
+        opacity: 0;
+    }
+
+    32% {
+        opacity: 1;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes showThree {
+    0% {
+        opacity: 0;
+    }
+
+    33% {
+        opacity: 0;
+    }
+
+    66% {
+        opacity: 1;
+    }
+
+    97% {
+        opacity: 0;
+    }
+}
